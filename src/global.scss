@@ -24,3 +24,22 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+ion-input {
+    border-bottom: 1px solid #707070;
+  }
+  
+  ion-input.ion-touched.ion-valid {
+    border-bottom: 2px solid #008957;
+  }
+  
+  ion-input.ion-touched {
+    border-bottom: 2px solid red;
+  }
+
+.popover-content {
+  width: 90% !important;
+  left: 22px !important;
+    // height: 200px;
+}

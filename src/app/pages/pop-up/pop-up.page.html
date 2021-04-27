@@ -1,0 +1,36 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>popUp</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="6" offset-xl="3">
+        <form #passwordForm="ngForm" (ngSubmit)="onSubmit()">
+          <p style="font-size: small;">
+            Please enter the one time password received at your phone number {{phone}}
+          </p>
+          <ion-card>
+            <ion-item-divider color="secondary">
+              <ion-label>Enter password</ion-label>
+            </ion-item-divider>
+            <ion-card-content>
+              <ion-row>
+                <ion-col>
+                  <ion-input type="tel" maxlength="6" minlength="4" ngModel name="password" required></ion-input>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-button expand="block" type="submit" [disabled]="!passwordForm.valid">Login</ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
